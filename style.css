@@ -10,6 +10,7 @@ body {
   color: #1d1d1d;
   background-color: #fff;
   line-height: 1.6;
+  padding:0 10px;
 }
 
 /* Header */
@@ -20,7 +21,7 @@ header {
   top: 0;
   background: #fff; /* or your header background */
   z-index: 1000; /* keeps it above other elements */
-
+  
 }
 
 .desktop_nav_div,
@@ -81,7 +82,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   background: #f9fbff;
 }
 
@@ -118,7 +119,6 @@ header {
   padding: 0.9rem;
   border: 1px solid #FF000E91;
   border-radius: 8px;
-  animate: pulse;
 }
 
 .shortener-result {
@@ -456,6 +456,7 @@ footer {
   background: #111;
   color: #fff;
   padding: 2rem;
+  margin:0;
 }
 
 .footer_logo {
@@ -499,6 +500,11 @@ i {
 }
 
 /* Responsive */
+@media (min-width:900px){
+  .header{
+    padding:0 6rem;
+  }
+}
 /* Responsive */
 @media (max-width: 768px) {
   .desktop_nav_div {
